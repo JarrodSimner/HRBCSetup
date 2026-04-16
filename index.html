@@ -1,3 +1,6 @@
+<!-- Notes: 
+Stock items page returns to the cleaning checklist. Need Kev to put logic into that page to return it to the calling page. 
+-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -119,91 +122,83 @@
 </div>
 
   <details class="room">
-    <summary>Foyer</summary>
+    <summary>Outside Set Up</summary>
     <ul>
-      <li><label><input type="checkbox" data-id="foyer-mop"> Mop</label></li>
-      <li><label><input type="checkbox" data-id="foyer-clean-windows"> Clean windows &amp; surfaces</label></li>
-      <li><label><input type="checkbox" data-id="foyer-wipe-chairs"> Wipe chairs, tables</label></li>
-      <li><label><input type="checkbox" data-id="foyer-water-cooler"> Wipe water cooler, including top and sides</label></li>
-      <li><label><input type="checkbox" data-id="foyer-dust-bookshelf"> Dust bookshelf</label></li>
-      <li><label><input type="checkbox" data-id="foyer-dust-cobwebs"> Check for cobwebs & dust</label></li>
+      <li><label><input type="checkbox" data-id="outside-roller-door"> Lift the roller door to the kitchen </label></li>
+      <li><label><input type="checkbox" data-id="outside-urn"> Fill Urn, put it on wooden table and turn it on</label></li>
+      <li><label><input type="checkbox" data-id="outside-aircons"> Set all down stairsair cons to 22°C</label></li>
+      <li><label><input type="checkbox" data-id="outside-marquees"> Set Up Marquees </label></li>
+      <li><label><input type="checkbox" data-id="outside-road-flag"> Put flag out near the road </label></li>
+      <li><label><input type="checkbox" data-id="outside-other-flags"> Put the other two flags out </label></li>
+      <li><label><input type="checkbox" data-id="outside-green-tables"> Set up kids green table and chairs </label></li>
+      <li><label><input type="checkbox" data-id="outside-four-white-tables"> Set up four white tables in front of marquees </label></li>
+      <li><label><input type="checkbox" data-id="outside-single-white-table"> Set up one white table under furtherest marquee </label></li>
+      <li><label><input type="checkbox" data-id="outside-black-tables"> Set up the four black tables with chairs under marquees</label></li>
+      <li><label><input type="checkbox" data-id="outside-white-chairs"> Put white chairs around perimeter of marquees </label></li>
+
     </ul>
   </details>
 
   <details class="room">
-    <summary>Kitchen</summary>
+    <summary>Foyer Set Up </summary>
     <ul>
-      <li><label><input type="checkbox" data-id="Kitchen-bins"> Empty bins</label></li>
-      <li><label><input type="checkbox" data-id="Kitchen-counter"> Wipe counter &amp; surfaces</label></li>
-      <li><label><input type="checkbox" data-id="Kitchen-microwave"> Clean microwave</label></li>
-      <li><label><input type="checkbox" data-id="Kitchen-fridge"> Wipe fridge door</label></li>
-      <li><label><input type="checkbox" data-id="Kitchen-mop"> Vacuum & mop floor</label></li>
-      <li><label><input type="checkbox" data-id="Kitchen-dust-cobwebs"> Check for cobwebs & dust</label></li>
+      <li><label><input type="checkbox" data-id="foyer-water-cooler"> Check water cooler drip tray is empty</label></li>
+      <li><label><input type="checkbox" data-id="foyer-paper-cups"> Fill paper cup holder near water cooler </label></li>
+      <li><label><input type="checkbox" data-id="foyer-TV"> Turn the TV slides on </label></li>
+      <li><label><input type="checkbox" data-id="foyer-bins"> Check if bin needs emptying </label></li>
+      <li><label><input type="checkbox" data-id="foyer-floor"> Check Cleanliness of floor </label></li>
+      <li><label><input type="checkbox" data-id="foyer-clean-windows"> Clean windows &amp; surfaces if dirty </label></li>
     </ul>
   </details>
 
   <details class="room">
-    <summary>Toilets</summary>
+    <summary>Kitchen Set Up </summary>
+    <ul>
+      <li><label><input type="checkbox" data-id="Kitchen-bins"> Check if bin needs emptying </label></li>
+      <li><label><input type="checkbox" data-id="Kitchen-floor"> Check that floor is clean</label></li>
+    </ul>
+  </details>
 
+  <details class="room">
+    <summary>Toilets Set Up </summary>
     <ul>
       <li>
         <strong>Toilet - Disabled</strong>
         <ul>
-          <li><label><input type="checkbox" data-id="ToiletDisabled-bins"> Empty bins</label></li>
-          <li><label><input type="checkbox" data-id="ToiletDisabled-wipe-general"> Clean sink, taps, mirror &amp; change table</label></li>          
-          <li><label><input type="checkbox" data-id="ToiletDisabled-toilet"> Clean toilet</label></li>
-          <li><label><input type="checkbox" data-id="ToiletDisabled-mop"> Mop floor</label></li>
-          <li><label><input type="checkbox" data-id="ToiletDisabled-wipe-door"> Wipe door handle &amp; lock</label></li>
-          <li><label><input type="checkbox" data-id="ToiletDisabled-dust-cobwebs"> Check for cobwebs & dust</label></li>
-          <!-- Refill item properly wrapping the sub-list -->
-          <li><label><input type="checkbox" data-id="ToiletDisabled-refills"> Refill</label>
-            <ul class="sub-refill">
-              <li>Hand soap</li>
-              <li>Paper towels</li>
-              <li>Toilet rolls</li>
-            </ul>
-          </li>
+          <li><label><input type="checkbox" data-id="ToiletDisabled-bins"> Check if bin needs emptying </label></li>
+          <li><label><input type="checkbox" data-id="ToiletDisabled-nappy-bin"> Empty nappy bin if any nappies in it</label></li>
+          <li><label><input type="checkbox" data-id="ToiletDisabled-paper-towels"> Check paper towel dispenser is full </label></li>
+          <li><label><input type="checkbox" data-id="ToiletDisabled-toilet-rolls"> Make sure there's at least 3 spare toilet rolls </label></li>        
+          <li><label><input type="checkbox" data-id="ToiletDisabled-mirror"> Check if mirror needs a clean </label></li>          
+          <li><label><input type="checkbox" data-id="ToiletDisabled-toiet"> Check if toilet needs a clean</label></li>
+          <li><label><input type="checkbox" data-id="ToiletDisabled-soap"> Check if hand soap is at least half full </label></li>
+          <li><label><input type="checkbox" data-id="ToiletDisabled-floor"> Check if floor needs a clean </label></li>
         </ul>
       </li>
 
       <li>
         <strong>Toilet Female</strong>
         <ul>
-          <li><label><input type="checkbox" data-id="ToiletFemale-bins"> Empty bins</label></li>
-          <li><label><input type="checkbox" data-id="ToiletFemale-wipe-general"> Clean sink, taps, mirror &amp; surfaces</label></li>          
-          <li><label><input type="checkbox" data-id="ToiletFemale-toilet"> Clean toilets (x4)</label></li>
-          <li><label><input type="checkbox" data-id="ToiletFemale-mop"> Mop floor</label></li>
-          <li><label><input type="checkbox" data-id="ToiletFemale-wipe-door"> Wipe door handle &amp; lock</label></li>
-          <li><label><input type="checkbox" data-id="ToiletFemale-dust-cobwebs"> Check for cobwebs & dust</label></li>
-          <!-- Refill item properly wrapping the sub-list -->
-          <li><label><input type="checkbox" data-id="ToiletFemale-refills"> Refill</label>
-            <ul class="sub-refill">
-              <li>Hand soap</li>
-              <li>Paper towels</li>
-              <li>Toilet rolls</li>
-              <li>Female products</li>
-            </ul>
-          </li>
+          <li><label><input type="checkbox" data-id="ToiletFemale-bins"> Check if bin needs emptying </label></li>
+          <li><label><input type="checkbox" data-id="ToiletFemale-paper-towels"> Check paper towel dispenser is full</label></li>          
+          <li><label><input type="checkbox" data-id="ToiletFemale-toilet-rolls"> Make sure there's at least 2 spare toilet rolls in each cubicle</label></li>
+          <li><label><input type="checkbox" data-id="ToiletFemale-pads"> Check there's 4 sanitary pads in each cubicle  </label></li>
+          <li><label><input type="checkbox" data-id="ToiletFemale-mirrors"> Check if mirrors need cleaning </label></li>
+          <li><label><input type="checkbox" data-id="ToiletFemale-toilets"> Check if toilets need a clean</label></li>
+          <li><label><input type="checkbox" data-id="ToiletFemale-soap"> Check if hand soap is at least half full</label></li>
+          <li><label><input type="checkbox" data-id="ToiletFemale-floor"> Check if floor needs a clean </label></li>
         </ul>
       </li>
 
       <li>
         <strong>Toilet Male</strong>
         <ul>
-          <li><label><input type="checkbox" data-id="ToiletMale-bins"> Empty bins</label></li>
-          <li><label><input type="checkbox" data-id="ToiletMale-wipe-general"> Clean sink, taps, mirror &amp; surfaces</label></li>          
-          <li><label><input type="checkbox" data-id="ToiletMale-toilet"> Clean toilets (x2)</label></li>
-          <li><label><input type="checkbox" data-id="ToiletMale-mop"> Mop floor</label></li>
-          <li><label><input type="checkbox" data-id="ToiletMale-wipe-door"> Wipe door handles &amp; locks</label></li>
-          <li><label><input type="checkbox" data-id="ToiletMale-dust-cobwebs"> Check for cobwebs & dust</label></li>
-          <!-- Refill item properly wrapping the sub-list -->
-          <li><label><input type="checkbox" data-id="ToiletMale-refills"> Refill</label>
-            <ul class="sub-refill">
-              <li>Hand soap</li>
-              <li>Paper towels</li>
-              <li>Toilet rolls</li>
-            </ul>
-          </li>  
+          <li><label><input type="checkbox" data-id="ToiletMale-bins"> Check if bin needs emptying</label></li>
+          <li><label><input type="checkbox" data-id="ToiletMale-paper-towels"> Check paper towel dispenser is full</label></li>          
+          <li><label><input type="checkbox" data-id="ToiletMale-toilet-rolls"> Make sure there's at least 2 spare toilet rolls in each cubicle</label></li>
+          <li><label><input type="checkbox" data-id="ToiletMale-mirrors"> Check if mirrors need cleaning</label></li>
+          <li><label><input type="checkbox" data-id="ToiletMale-soap"> Check if hand soap is at least half full </label></li>
+          <li><label><input type="checkbox" data-id="ToiletMale-floor"> Check if floor needs a clean</label></li>  
         </ul>
       </li>
     </ul>
@@ -212,60 +207,32 @@
   <details class="room">
     <summary>Auditorium</summary>
     <ul>
-      <li><label><input type="checkbox" data-id="Auditorium-vacuum"> Vacuum main hall &amp; stage</label></li>
-      <li><label><input type="checkbox" data-id="Auditorium-bins"> Empty bin (music desk)</label></li>
-      <li><label><input type="checkbox" data-id="Auditorium-dust-cobwebs"> Check for cobwebs & dust</label></li>
+      <li><label><input type="checkbox" data-id="Auditorium-vacuum"> Spot Vacuum if required </label></li>
+      <li><label><input type="checkbox" data-id="Auditorium-chairs"> Set up chairs </label></li>
+      <li><label><input type="checkbox" data-id="Auditorium-reserved-signs"> Put "Reserved for families" signs on rear chairs </label></li>
+      <li><label><input type="checkbox" data-id="Auditorium-Toms-items"> Put Tom's water bottle and sweat rag behind pulpit </label></li>
+      <li><label><input type="checkbox" data-id="Auditorium-Toms-air-con"> Set Tom's air con to 16&deg;C </label></li>
+      <li><label><input type="checkbox" data-id="Auditorium-giving-bags"> Get the 4 giving bags from admin office and put them on front row seats </label></li>
+      <li><label><input type="checkbox" data-id="Auditorium-collection-allocation"> Allocate 2 church members for offering collection</label></li>
+
     </ul>
   </details>
 
   <details class="room">
-    <summary>Stairs</summary>
+    <summary>Upstairs</summary>
     <ul>
-      <li><label><input type="checkbox" data-id="Stairs-vacuum"> Vacuum</label></li>
-      <li><label><input type="checkbox" data-id="Stairs-railing"> Wipe railing</label></li>
+      <li><label><input type="checkbox" data-id="ParentsRm-nappy-bin"> Empty nappy bin in mothers room if any nappies in it </label></li>
+      <li><label><input type="checkbox" data-id="ParentsRm-audio"> Turn on audio in mothers room </label></li>
+      <li><label><input type="checkbox" data-id="ParentsRm-air-cons"> Turn on all upstairs air cons and set to 22&deg;C </label></li>
+      <li><label><input type="checkbox" data-id="ParentsRm-tidiness"> Check tidiness of mothers room</label></li>
+      <li><label><input type="checkbox" data-id="ParentsRm-vacuum-mothers-room"> Vacuum mothers room if required </label></li>
+      <li><label><input type="checkbox" data-id="ParentsRm-vacuum-other-rooms"> Vacuum the other two rooms if required </label></li>
+      <li><label><input type="checkbox" data-id="ParentsRm-kids-ministry"> Ask the kids ministry team leaders if they need any assistance </label></li>
+      <li><label><input type="checkbox" data-id="ParentsRm-vacuum-other-rooms"> Vacuum the other two rooms if required </label></li>
+      <li><label><input type="checkbox" data-id="ParentsRm-dyson"> Empty Dyson Vacuum</label></li>
     </ul>
   </details>
 
-  <details class="room">
-    <summary>Parents room</summary>
-    <ul>
-      <li><label><input type="checkbox" data-id="ParentsRm-bins"> Empty bin</label></li>
-      <li><label><input type="checkbox" data-id="ParentsRm-table"> Wipe glass table &amp; windows</label></li>
-      <li><label><input type="checkbox" data-id="ParentsRm-vacuum"> Vacuum</label></li>
-      <li><label><input type="checkbox" data-id="ParentsRm-toys"> Pickup toys and small objects</label></li>
-      <li><label><input type="checkbox" data-id="ParentsRm-dust-cobwebs"> Check for cobwebs & dust</label></li>
-    </ul>
-  </details>
-
-  <details class="room">
-    <summary>Offices - Admin & Tom</summary>
-    <ul>
-      <li><label><input type="checkbox" data-id="Offices-bins"> Empty bins &amp; shredder</label></li>
-      <li><label><input type="checkbox" data-id="Offices-wipe"> Wipe surfaces</label></li>
-      <li><label><input type="checkbox" data-id="Offices-vacuum"> Vacuum</label></li>
-      <li><label><input type="checkbox" data-id="Offices-dust-cobwebs"> Check for cobwebs & dust</label></li>
-    </ul>
-  </details>
-
-  <details class="room">
-    <summary>Upstairs hallway and room 1 & 2</summary>
-    <ul>
-      <li><label><input type="checkbox" data-id="upstairs-bins"> Empty bins</label></li>
-      <li><label><input type="checkbox" data-id="upstairs-vacuum"> Vacuum</label></li>
-      <li><label><input type="checkbox" data-id="upstairs-dust-cobwebs"> Check for cobwebs & dust</label></li>
-    </ul>
-  </details>
-
-  <details class="room">
-    <summary>Pre-lockup tasks</summary>
-    <ul>
-      <li><label><input type="checkbox" data-id="lockup-lights"> All lights off</label></li>
-      <li><label><input type="checkbox" data-id="lockup-AC"> All airconditioners off</label></li>
-      <li><label><input type="checkbox" data-id="lockup-keys"> Handpaper and toilet key back on hook</label></li>
-      <li><label><input type="checkbox" data-id="lockup-stock"> Update stock items status page</label></li>
-      <li><label><input type="checkbox" data-id="anything-else"> Anything Else</label></li>  
-    </ul>
-  </details>
 
 <p style="text-align:center;">
   <a href="https://blueskyranger.github.io/HRBCleaningV2/stock.html" style="display:block; margin-bottom:10px;">
